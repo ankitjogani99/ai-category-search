@@ -33,8 +33,8 @@ This project is a Laravel 12 web application that allows users to:
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/ai-category-search.git
-cd ai-category-search-new
+git clone https://github.com/ankitjogani99/ai-category-search.git
+cd ai-category-search
 ```
 
 ### 2. Install Dependencies
@@ -104,20 +104,6 @@ Open your browser at:
 http://localhost:8000/search
 ```
 
-Enter a plain English query and see the top 5 most similar categories ranked by cosine similarity!
-
----
-
-## 📁 File Structure Overview
-
-| File / Folder                       | Description                              |
-|------------------------------------|------------------------------------------|
-| `app/Console/Commands/ImportCategories.php` | Imports Excel and calls OpenAI           |
-| `app/Http/Controllers/SearchController.php` | Search logic using OpenAI + cosine sim  |
-| `resources/views/search.blade.php`         | UI for the search input and results      |
-| `routes/web.php`                           | Routes for search interface              |
-| `database/migrations/...create_categories_table.php` | Category table with embeddings     |
-
 ---
 
 ## 🧠 Example Query
@@ -133,25 +119,3 @@ Enter a plain English query and see the top 5 most similar categories ranked by 
 ...
 ```
 
----
-
-## ✅ To-Do / Ideas
-
-- [ ] Add pagination for results
-- [ ] Style UI with Tailwind CSS
-- [ ] Background job queue for embeddings
-- [ ] Rate limit detection for OpenAI errors
-
----
-
-## 📄 License
-
-MIT – feel free to fork, clone, and build upon this project!
-
----
-
-## 🙌 Acknowledgements
-
-- [Laravel](https://laravel.com/)
-- [OpenAI](https://platform.openai.com/)
-- [Maatwebsite Laravel Excel](https://laravel-excel.com/)
